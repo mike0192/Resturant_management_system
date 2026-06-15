@@ -78,7 +78,7 @@ public class Orders {
     public void setTotal_amount(double total_amount) {
         this.total_amount = total_amount;
     }
-    Orders(String O_id, String Cust_id, String Staff_id, Date O_date, boolean status, double total_amount, double discount){
+    public Orders(){
         this.O_id = O_id;
         this.Cust_id = Cust_id;
         this.Staff_id =Staff_id;

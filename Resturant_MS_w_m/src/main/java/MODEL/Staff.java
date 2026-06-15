@@ -58,7 +58,7 @@ public class Staff {
     public void setRole(String role) {
         this.role = role;
     }
-    Staff(String id, String name, String role, int phone, Date Date, boolean is_active){
+    public Staff(){
         this.id = id;
         this.name = name;
         this.role = role;

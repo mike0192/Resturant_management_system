@@ -59,7 +59,7 @@ public class Menu_items {
             System.out.println("Price cant be 0 and below so input the price again!");
         }
     }
-    Menu_items(String id, String name, String category, double price, boolean is_available, String description){
+    public Menu_items(){
         this.id = id;
         this.name = name;
         this.category = category;

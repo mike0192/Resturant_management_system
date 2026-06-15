@@ -68,7 +68,7 @@ public class Customers {
         this.registration_date = registration_date;
     }
 
-    Customers(String id, String name, int phone, String email, Date registration_date){
+    public Customers(){
         this.id = id;
         this.name = name;
         this.phone = phone;
