@@ -11,7 +11,7 @@
 
 <AnchorPane prefHeight="407.0" prefWidth="597.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/26" xmlns:fx="http://javafx.com/fxml/1" fx:controller="CONTROLLER_NAME">
    <children>
-      <Label layoutX="180.0" layoutY="73.0" prefHeight="36.0" prefWidth="253.0" text="   WELCOME" textFill="#00c7a6">
+      <Label layoutX="180.0" layoutY="73.0" prefHeight="36.0" prefWidth="253.0" text="   WELCOME" textFill="#06202b">
          <font>
             <Font name="Segoe UI Black" size="36.0" />
          </font>
@@ -21,20 +21,20 @@
             <TextField fx:id="userField" prefHeight="35.0" prefWidth="202.0" />
          </children>
       </HBox>
-      <Label layoutX="199.0" layoutY="118.0" prefHeight="17.0" prefWidth="35.0" text="Login" textFill="#00c7a6" />
+      <Label layoutX="199.0" layoutY="118.0" prefHeight="17.0" prefWidth="35.0" text="Login" textFill="#06202b" />
       <HBox layoutX="199.0" layoutY="200.0" prefHeight="33.0" prefWidth="202.0">
          <children>
             <TextField fx:id="PassField" prefHeight="35.0" prefWidth="202.0" />
          </children>
       </HBox>
-      <Label layoutX="199.0" layoutY="182.0" prefHeight="17.0" prefWidth="67.0" text="Password" textFill="#00c7a6" />
-      <Button fx:id="LogButton" layoutX="242.0" layoutY="258.0" mnemonicParsing="false" prefHeight="43.0" prefWidth="111.0" style="-fx-background-color: #00c7a6;" text="LOGIN" textFill="WHITE" />
-      <Polygon fill="#00c7a6" layoutX="50.0" layoutY="371.0" points="-50.0, 40.0, 50.0, 40.0, -50.0, -48.333343505859375" stroke="BLACK" strokeType="INSIDE" />
-      <Polygon fill="#00c7a6" layoutX="150.0" layoutY="371.0" points="-50.0, 40.0, 50.0, 40.0, -16.666656494140625, 0.999969482421875" stroke="BLACK" strokeType="INSIDE" />
-      <Polygon fill="#00c7a6" layoutX="249.0" layoutY="371.0" points="-50.0, 40.0, 50.0, 40.0, -11.66668701171875, -61.0" stroke="BLACK" strokeType="INSIDE" />
-      <Polygon fill="#00c7a6" layoutX="348.0" layoutY="371.0" points="-50.0, 40.0, 50.0, 40.0, 8.66668701171875, 9.666656494140625" stroke="BLACK" strokeType="INSIDE" />
-      <Polygon fill="#00c7a6" layoutX="448.0" layoutY="371.0" points="-50.0, 40.0, 50.0, 40.0, 0.0, -14.333343505859375" stroke="BLACK" strokeType="INSIDE" />
-      <Polygon fill="#00c7a6" layoutX="536.0" layoutY="371.0" points="-50.0, 40.0, 0.0, 39.999969482421875, -20.66668701171875, -132.3333282470703" stroke="BLACK" strokeType="INSIDE" />
-      <Polygon fill="#00c7a6" layoutX="586.0" layoutY="371.0" points="-50.0, 40.0, 14.0, 40.333343505859375, 14.0, -27.0" stroke="BLACK" strokeType="INSIDE" />
+      <Label layoutX="199.0" layoutY="182.0" prefHeight="17.0" prefWidth="67.0" text="Password" textFill="#06202b" />
+      <Button fx:id="LogButton" layoutX="242.0" layoutY="258.0" mnemonicParsing="false" prefHeight="43.0" prefWidth="111.0" style="-fx-background-color: #06202B;" text="LOGIN" textFill="WHITE" />
+      <Polygon fill="#06202b" layoutX="50.0" layoutY="371.0" points="-50.0, 40.0, 50.0, 40.0, -50.0, -48.333343505859375" stroke="BLACK" strokeType="INSIDE" />
+      <Polygon fill="#06202b" layoutX="150.0" layoutY="371.0" points="-50.0, 40.0, 50.0, 40.0, -16.666656494140625, 0.999969482421875" stroke="BLACK" strokeType="INSIDE" />
+      <Polygon fill="#06202b" layoutX="249.0" layoutY="371.0" points="-50.0, 40.0, 50.0, 40.0, -11.66668701171875, -61.0" stroke="BLACK" strokeType="INSIDE" />
+      <Polygon fill="#06202b" layoutX="348.0" layoutY="371.0" points="-50.0, 40.0, 50.0, 40.0, 8.66668701171875, 9.666656494140625" stroke="BLACK" strokeType="INSIDE" />
+      <Polygon fill="#06202b" layoutX="448.0" layoutY="371.0" points="-50.0, 40.0, 50.0, 40.0, 0.0, -14.333343505859375" stroke="BLACK" strokeType="INSIDE" />
+      <Polygon fill="#06202b" layoutX="536.0" layoutY="371.0" points="-50.0, 40.0, 0.0, 39.999969482421875, -20.66668701171875, -132.3333282470703" stroke="BLACK" strokeType="INSIDE" />
+      <Polygon fill="#06202b" layoutX="586.0" layoutY="371.0" points="-50.0, 40.0, 14.0, 40.333343505859375, 14.0, -27.0" stroke="BLACK" strokeType="INSIDE" />
    </children>
 </AnchorPane>
