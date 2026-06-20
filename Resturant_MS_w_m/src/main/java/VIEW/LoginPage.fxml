@@ -9,11 +9,11 @@
 <?import javafx.scene.text.Font?>
 
 
-<AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/26" xmlns:fx="http://javafx.com/fxml/1" fx:controller="CONTROLLER_NAME">
+<AnchorPane prefHeight="407.0" prefWidth="597.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/26" xmlns:fx="http://javafx.com/fxml/1" fx:controller="CONTROLLER_NAME">
    <children>
-      <Label layoutX="177.0" layoutY="75.0" prefHeight="36.0" prefWidth="253.0" text="   WELCOME" textFill="#00c7a6">
+      <Label layoutX="180.0" layoutY="73.0" prefHeight="36.0" prefWidth="253.0" text="   WELCOME" textFill="#00c7a6">
          <font>
-            <Font name="Segoe UI Bold" size="36.0" />
+            <Font name="Segoe UI Black" size="36.0" />
          </font>
       </Label>
       <HBox layoutX="199.0" layoutY="138.0" prefHeight="33.0" prefWidth="202.0">
