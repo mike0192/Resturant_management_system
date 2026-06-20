@@ -31,25 +31,19 @@ public class StaffImp implements IStaffDAO{
 
     @Override
     public boolean updateStaff(Staff staff) {
-        /*    private String id;
-    private String name;
-    private String role;
-    private int phone;
-    private Date Date;
-    private boolean is_active;
-    */
-        String sql ="UPDATE students SET name=?,role=?,phone=?,Date=? WHERE id=?";
+        String sql = "UPDATE students SET name=?, role=?, phone=?, Date=? WHERE id=?";
 
-        try(Connection con= mysqlDBConnection.getConnection();
-            PreparedStatement ps =con.prepareStatement(sql)){
-
+        try(Connection con = mysqlDBConnection.getConnection();
+            PreparedStatement ps = con.prepareStatement(sql)) {
 
             ps.setString(1, staff.getName());
             ps.setString(2, staff.getRole());
             ps.setInt(3, staff.getPhone());
-            ps.setString(4, staff.getId());
-            int rows=ps.executeUpdate();
-            return rows> 0;
+            ps.setDate(4, (Date) staff.getDate());
+            ps.setString(5, staff.getId());
+
+            int rows = ps.executeUpdate();
+            return rows > 0;
         }
         catch (SQLException e) {
             e.printStackTrace();
