@@ -83,23 +83,23 @@
                   <Insets left="125.0" top="-600.0" />
                </FlowPane.margin>
                <children>
-                  <TextField prefHeight="32.0" prefWidth="68.0">
+                  <TextField fx:id="IDField" prefHeight="32.0" prefWidth="68.0">
                      <HBox.margin>
                         <Insets right="5.0" />
                      </HBox.margin>
                   </TextField>
-                  <TextField layoutX="10.0" layoutY="10.0" prefHeight="32.0" prefWidth="100.0" />
-                  <TextField layoutX="72.0" layoutY="10.0" prefHeight="32.0" prefWidth="80.0">
+                  <TextField fx:id="NameField" layoutX="10.0" layoutY="10.0" prefHeight="32.0" prefWidth="100.0" />
+                  <TextField fx:id="RoleField" layoutX="72.0" layoutY="10.0" prefHeight="32.0" prefWidth="80.0">
                      <HBox.margin>
                         <Insets left="5.0" />
                      </HBox.margin>
                   </TextField>
-                  <TextField layoutX="190.0" layoutY="10.0" prefHeight="32.0" prefWidth="95.0">
+                  <TextField fx:id="PhoneField" layoutX="190.0" layoutY="10.0" prefHeight="32.0" prefWidth="95.0">
                      <HBox.margin>
                         <Insets left="5.0" />
                      </HBox.margin>
                   </TextField>
-                  <TextField layoutX="286.0" layoutY="10.0" prefHeight="32.0" prefWidth="81.0">
+                  <TextField fx:id="DateField" layoutX="286.0" layoutY="10.0" prefHeight="32.0" prefWidth="81.0">
                      <HBox.margin>
                         <Insets left="20.0" />
                      </HBox.margin>
@@ -111,10 +111,10 @@
                   <Insets left="125.0" top="-500.0" />
                </FlowPane.margin>
                <children>
-                  <Button mnemonicParsing="false" prefHeight="35.0" prefWidth="119.0" style="-fx-background-color: white;" text="ADD" textFill="#00ff25" />
-                  <Button layoutX="10.0" layoutY="10.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="119.0" style="-fx-background-color: white;" text="UPDATE" textFill="#11c0ff" />
-                  <Button layoutX="129.0" layoutY="10.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="119.0" style="-fx-background-color: white;" text="DELETE" textFill="RED" />
-                  <Button layoutX="249.0" layoutY="10.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="119.0" style="-fx-background-color: white;" text="SEARCH" />
+                  <Button fx:id="AddButton" mnemonicParsing="false" prefHeight="35.0" prefWidth="119.0" style="-fx-background-color: white;" text="ADD" textFill="#00ff25" />
+                  <Button fx:id="UpdateButton" layoutX="10.0" layoutY="10.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="119.0" style="-fx-background-color: white;" text="UPDATE" textFill="#11c0ff" />
+                  <Button fx:id="DeleteButton" layoutX="129.0" layoutY="10.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="119.0" style="-fx-background-color: white;" text="DELETE" textFill="RED" />
+                  <Button fx:id="SearchButton" layoutX="249.0" layoutY="10.0" mnemonicParsing="false" prefHeight="35.0" prefWidth="119.0" style="-fx-background-color: white;" text="SEARCH" />
                </children>
             </HBox>
          </children>
