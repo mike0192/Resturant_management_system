@@ -9,7 +9,7 @@
 <?import javafx.scene.text.Font?>
 
 
-<AnchorPane prefHeight="407.0" prefWidth="597.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/26" xmlns:fx="http://javafx.com/fxml/1" fx:controller="CONTROLLER_NAME">
+<AnchorPane prefHeight="407.0" prefWidth="597.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/26" xmlns:fx="http://javafx.com/fxml/1" fx:controller="CONTROLLER.LoginController">
    <children>
       <Label layoutX="180.0" layoutY="73.0" prefHeight="36.0" prefWidth="253.0" text="   WELCOME" textFill="#06202b">
          <font>
