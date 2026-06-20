@@ -18,17 +18,17 @@
       </Label>
       <HBox layoutX="199.0" layoutY="138.0" prefHeight="33.0" prefWidth="202.0">
          <children>
-            <TextField prefHeight="35.0" prefWidth="202.0" />
+            <TextField fx:id="userField" prefHeight="35.0" prefWidth="202.0" />
          </children>
       </HBox>
       <Label layoutX="199.0" layoutY="118.0" prefHeight="17.0" prefWidth="35.0" text="Login" textFill="#00c7a6" />
       <HBox layoutX="199.0" layoutY="200.0" prefHeight="33.0" prefWidth="202.0">
          <children>
-            <TextField prefHeight="35.0" prefWidth="202.0" />
+            <TextField fx:id="PassField" prefHeight="35.0" prefWidth="202.0" />
          </children>
       </HBox>
       <Label layoutX="199.0" layoutY="182.0" prefHeight="17.0" prefWidth="67.0" text="Password" textFill="#00c7a6" />
-      <Button layoutX="242.0" layoutY="258.0" mnemonicParsing="false" prefHeight="43.0" prefWidth="111.0" style="-fx-background-color: #00c7a6;" text="LOGIN" textFill="WHITE" />
+      <Button fx:id="LogButton" layoutX="242.0" layoutY="258.0" mnemonicParsing="false" prefHeight="43.0" prefWidth="111.0" style="-fx-background-color: #00c7a6;" text="LOGIN" textFill="WHITE" />
       <Polygon fill="#00c7a6" layoutX="50.0" layoutY="371.0" points="-50.0, 40.0, 50.0, 40.0, -50.0, -48.333343505859375" stroke="BLACK" strokeType="INSIDE" />
       <Polygon fill="#00c7a6" layoutX="150.0" layoutY="371.0" points="-50.0, 40.0, 50.0, 40.0, -16.666656494140625, 0.999969482421875" stroke="BLACK" strokeType="INSIDE" />
       <Polygon fill="#00c7a6" layoutX="249.0" layoutY="371.0" points="-50.0, 40.0, 50.0, 40.0, -11.66668701171875, -61.0" stroke="BLACK" strokeType="INSIDE" />
