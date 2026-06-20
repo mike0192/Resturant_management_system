@@ -24,7 +24,7 @@
       <Label layoutX="199.0" layoutY="118.0" prefHeight="17.0" prefWidth="35.0" text="Login" textFill="#06202b" />
       <HBox layoutX="199.0" layoutY="200.0" prefHeight="33.0" prefWidth="202.0">
          <children>
-            <TextField fx:id="PassField" prefHeight="35.0" prefWidth="202.0" />
+            <PasswordField fx:id="PassField" prefHeight="35.0" prefWidth="202.0" />
          </children>
       </HBox>
       <Label layoutX="199.0" layoutY="182.0" prefHeight="17.0" prefWidth="67.0" text="Password" textFill="#06202b" />
