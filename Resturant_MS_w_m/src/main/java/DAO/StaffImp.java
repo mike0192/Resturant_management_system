@@ -6,24 +6,23 @@ import java.sql.*;
 import java.util.ArrayList;
 import java.util.List;
 
-public class StaffImp implements IStaffDAO{
+public class StaffImp implements IStaffDAO {
     @Override
     public boolean addStaff(Staff staff) {
 
-        String sql ="INSERT INTO students(id,name,role,phone,Date) VALUES(?,?,?,?,?)";
+        String sql = "INSERT INTO students(id,name,role,phone,Date) VALUES(?,?,?,?,?)";
 
-        try(Connection con= mysqlDBConnection.getConnection();
-            PreparedStatement ps =con.prepareStatement(sql)){
+        try (Connection con = mysqlDBConnection.getConnection();
+             PreparedStatement ps = con.prepareStatement(sql)) {
             ps.setString(1, staff.getId());
             ps.setString(2, staff.getName());
             ps.setString(3, staff.getRole());
             ps.setInt(4, staff.getPhone());
             ps.setDate(5, (Date) staff.getDate());
 
-            int rows=ps.executeUpdate();
-            return rows> 0;
-        }
-        catch (SQLException e) {
+            int rows = ps.executeUpdate();
+            return rows > 0;
+        } catch (SQLException e) {
             e.printStackTrace();
         }
         return false;
@@ -33,8 +32,8 @@ public class StaffImp implements IStaffDAO{
     public boolean updateStaff(Staff staff) {
         String sql = "UPDATE students SET name=?, role=?, phone=?, Date=? WHERE id=?";
 
-        try(Connection con = mysqlDBConnection.getConnection();
-            PreparedStatement ps = con.prepareStatement(sql)) {
+        try (Connection con = mysqlDBConnection.getConnection();
+             PreparedStatement ps = con.prepareStatement(sql)) {
 
             ps.setString(1, staff.getName());
             ps.setString(2, staff.getRole());
@@ -44,8 +43,7 @@ public class StaffImp implements IStaffDAO{
 
             int rows = ps.executeUpdate();
             return rows > 0;
-        }
-        catch (SQLException e) {
+        } catch (SQLException e) {
             e.printStackTrace();
         }
         return false;
@@ -53,16 +51,16 @@ public class StaffImp implements IStaffDAO{
 
     @Override
     public boolean deleteStaff(String id) {
-        String sql ="DELETE FROM students WHERE id=?";
-
-        try(Connection con= mysqlDBConnection.getConnection();
-            PreparedStatement ps =con.prepareStatement(sql)){
-
+        String sql = "DELETE FROM Students WHERE id =? ";
+        try (Connection con = mysqlDBConnection.getConnection();
+             PreparedStatement ps = con.prepareStatement(sql)) {
+            //try catch with resource
             ps.setString(1, id);
-            int rows=ps.executeUpdate();
-            return rows> 0;
-        }
-        catch (SQLException e) {
+
+            int rows = ps.executeUpdate();
+
+            return rows > 0;
+        } catch (SQLException e) {
             e.printStackTrace();
         }
         return false;
@@ -70,12 +68,9 @@ public class StaffImp implements IStaffDAO{
 
     @Override
     public Staff searchstaffById(String id) {
-        String sql ="SELECT * FROM students WHERE id=?";
-
-
-        try(Connection con= mysqlDBConnection.getConnection();
-            PreparedStatement ps =con.prepareStatement(sql)){
-
+        String sql = "SELECT * FROM Students WHERE id = ?";
+        try (Connection con = mysqlDBConnection.getConnection();
+             PreparedStatement ps = con.prepareStatement(sql)) {
             ps.setString(1, id);
             ResultSet rs = ps.executeQuery();
             if (rs.next()) {
@@ -88,8 +83,7 @@ public class StaffImp implements IStaffDAO{
 
                 return staff;
             }
-        }
-        catch (SQLException e) {
+        } catch (SQLException e) {
             e.printStackTrace();
         }
         return null;
@@ -99,24 +93,24 @@ public class StaffImp implements IStaffDAO{
     public List<Staff> getAllStaff() {
         List<Staff> listofstaff = new ArrayList<>();
 
-        String sql = "SELECT * FROM students";
+        String sql = "SELECT * FROM Students";
 
-        try(Connection con= mysqlDBConnection.getConnection();
-            PreparedStatement ps =con.prepareStatement(sql);
-            ResultSet rs = ps.executeQuery()){
-
-            while (rs.next()) {
+        try (Connection con = mysqlDBConnection.getConnection();
+             PreparedStatement ps = con.prepareStatement(sql)) {
+            ResultSet rs = ps.executeQuery();
+            if (rs.next()) {
                 Staff staff = new Staff();
-                staff.setId(rs.getString("id"));
-                staff.setName(rs.getString("name"));
-                staff.setRole(rs.getString("role"));
-                staff.setPhone(rs.getInt("phone"));
+                staff.setId(rs.getString("ID"));
+                staff.setName(rs.getString("Name"));
+                staff.setRole(rs.getString("Role"));
+                staff.setPhone(rs.getInt("Phone"));
+                staff.setDate(rs.getDate("Date"));
 
                 listofstaff.add(staff);
+
             }
-        }
-        catch (SQLException e) {
-            e.printStackTrace();
+        } catch (SQLException e) {
+            throw new RuntimeException(e);
         }
         return listofstaff;
     }
