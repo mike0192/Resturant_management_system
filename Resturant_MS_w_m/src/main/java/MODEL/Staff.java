@@ -2,11 +2,6 @@ package MODEL;
 
 import java.util.Date;
 
-/**- staff (id, name, role, phone, hire_date, is_active)
- * 4. Staff Management
- * Add staff members (name, role, phone, hire date)
- * Track which staff member took which order
- */
 
 public class Staff {
     private String id;
